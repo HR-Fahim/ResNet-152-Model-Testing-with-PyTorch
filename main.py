@@ -16,7 +16,7 @@ preprocess = transforms.Compose([
 ])
 
 # Load and preprocess sample image
-image_path = 'self-tested\\images\\Cat.jpg'
+image_path = 'images\\Cat.jpg'
 image = Image.open(image_path)
 input_tensor = preprocess(image)
 input_batch = input_tensor.unsqueeze(0)  # Add a batch dimension
@@ -34,7 +34,7 @@ with torch.no_grad():
 probabilities = torch.nn.functional.softmax(output[0], dim=0)
 
 # Get the class labels
-with open('self-tested\\imagenet_classes.txt') as f:
+with open('imagenet_classes.txt') as f:
     labels = [line.strip() for line in f.readlines()]
 
 # Print the top 5 predicted classes with probabilities in percentage
