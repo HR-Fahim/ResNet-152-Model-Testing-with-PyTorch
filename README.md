@@ -1,6 +1,6 @@
 # ResNet-152 Model Testing with PyTorch
 
-This project aims to demonstrate image classification using a pre-trained ResNet-152 model provided by PyTorch. 
+This repository aims to demonstrate image classification using a pre-trained ResNet-152 model provided by PyTorch. 
 
 ![ResNet152 testing](https://github.com/HR-Fahim/ResNet-152-Model-Testing-with-PyTorch/assets/66734379/ff33c7d5-c238-4145-839c-48d2198c531c)
 
